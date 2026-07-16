@@ -1,3 +1,10 @@
+# ignore the data files
+*.data
+*.meta
+*.bin
+
+verification/tutorial_reentrant_channel/run/
+
 # CVS default ignores begin
 *~
 \#*
