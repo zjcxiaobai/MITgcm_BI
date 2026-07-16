@@ -1,0 +1,26 @@
+#!/usr/bin/expect -f
+set timeout 3600
+
+spawn debugjob --clean 2
+expect "$ "
+
+send "cd run\n"
+expect "$ "
+
+send "module purge\n"
+expect "$ "
+
+send "module load StdEnv/2023\n"
+expect "$ "
+
+send "module load intel/2023.2.1\n"
+expect "$ "
+
+send "module load intelmpi/2021.9.0\n"
+expect "$ "
+
+send "mpirun -np 320 ./mitgcmuv\n"
+expect "$ "
+
+send "exit\n"
+expect eof
