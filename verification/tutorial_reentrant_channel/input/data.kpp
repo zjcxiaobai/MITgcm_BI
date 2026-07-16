@@ -1,0 +1,10 @@
+# =====================================================================
+# | Parameters for Pacanowski&Philander (1981) vertical mixing scheme |
+# =====================================================================
+ &KPP_PARM01
+ KPPwriteState=.TRUE.,
+ minKPPhbl = 6.,
+# bulk richardson number
+ Ricr = 0.3559,
+ Riinfty = 0.6998,
+ &

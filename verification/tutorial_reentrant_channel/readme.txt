@@ -1,0 +1,1 @@
+wind profile is changed from sin function to linear from a pickup = 2255040
