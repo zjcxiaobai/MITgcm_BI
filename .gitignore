@@ -4,6 +4,7 @@
 *.bin
 
 verification/tutorial_reentrant_channel/run/
+*.ipynb_checkpoints*
 
 # CVS default ignores begin
 *~
